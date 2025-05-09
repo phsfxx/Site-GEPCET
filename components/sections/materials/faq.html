@@ -1,0 +1,87 @@
+<!-- FAQ Section -->
+<section class="faq-section" aria-label="Perguntas Frequentes">
+    <div class="container">
+        <h3><i class="fas fa-question-circle"></i> Perguntas Frequentes</h3>
+        
+        <div class="search-box">
+            <input type="text" id="faqSearch" placeholder="Buscar perguntas...">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div class="faq-categories">
+            <button class="category-btn active" data-category="geral">Geral</button>
+            <button class="category-btn" data-category="projetos">Projetos</button>
+            <button class="category-btn" data-category="eventos">Eventos</button>
+            <button class="category-btn" data-category="materiais">Materiais</button>
+        </div>
+
+        <div class="faq-grid">
+            <div class="faq-item" data-category="geral">
+                <div class="faq-question" onclick="toggleFAQ('faq1')">
+                    <h4>O que é o GEPCET?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div id="faq1" class="faq-answer">
+                    <p>O GEPCET (Grupo de Estudos e Pesquisas em Ciências e Educação em Tecnologias) é um grupo de pesquisa dedicado ao estudo e desenvolvimento de metodologias inovadoras para o ensino de ciências e tecnologias.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="geral">
+                <div class="faq-question" onclick="toggleFAQ('faq2')">
+                    <h4>Como posso participar do GEPCET?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div id="faq2" class="faq-answer">
+                    <p>Para participar do GEPCET, você pode entrar em contato através do formulário em nossa página de contato ou comparecer a um de nossos eventos. Estamos sempre abertos a novas parcerias e colaborações.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="projetos">
+                <div class="faq-question" onclick="toggleFAQ('faq3')">
+                    <h4>Como posso submeter um projeto?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div id="faq3" class="faq-answer">
+                    <p>Para submeter um projeto, você deve enviar uma proposta detalhada através do formulário em nossa página de projetos. Nossa equipe avaliará a proposta e entrará em contato para discutir os próximos passos.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="eventos">
+                <div class="faq-question" onclick="toggleFAQ('faq4')">
+                    <h4>Como posso me inscrever em eventos?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div id="faq4" class="faq-answer">
+                    <p>As inscrições para eventos podem ser feitas através da página de eventos em nosso site. Basta selecionar o evento desejado e clicar no botão "Inscrever-se". Alguns eventos podem ter custos associados, que serão informados no momento da inscrição.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="materiais">
+                <div class="faq-question" onclick="toggleFAQ('faq5')">
+                    <h4>Como posso acessar os materiais didáticos?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div id="faq5" class="faq-answer">
+                    <p>Os materiais didáticos estão disponíveis em nossa página de materiais. Você pode filtrar por tipo de material, disciplina ou nível educacional. A maioria dos materiais está disponível para download em formato PDF ou DOCX.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="materiais">
+                <div class="faq-question" onclick="toggleFAQ('faq6')">
+                    <h4>Posso usar os materiais em minhas aulas?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div id="faq6" class="faq-answer">
+                    <p>Sim, os materiais podem ser utilizados em suas aulas, desde que seja feita a atribuição de autoria ao GEPCET. Para uso comercial ou distribuição em larga escala, entre em contato conosco para discutir os termos de uso.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-contact">
+            <p>Não encontrou sua dúvida?</p>
+            <a href="contato.html" class="btn btn-primary">
+                <i class="fas fa-envelope"></i> Entre em Contato
+            </a>
+        </div>
+    </div>
+</section> 

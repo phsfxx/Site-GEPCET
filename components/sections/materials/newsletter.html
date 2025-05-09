@@ -1,0 +1,96 @@
+<!-- Newsletter Section -->
+<section class="newsletter-section" aria-label="Newsletter">
+    <div class="container">
+        <div class="newsletter-content">
+            <div class="newsletter-info">
+                <h3><i class="fas fa-envelope-open-text"></i> Receba Nossas Novidades</h3>
+                <p>Inscreva-se em nossa newsletter para receber atualizações sobre:</p>
+                <ul class="newsletter-features">
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Novos materiais didáticos
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Eventos e workshops
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Artigos e publicações
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Oportunidades de parceria
+                    </li>
+                </ul>
+            </div>
+
+            <div class="newsletter-form">
+                <form id="newsletterForm" onsubmit="subscribeNewsletter(event)">
+                    <div class="form-group">
+                        <label for="newsletterName">Nome</label>
+                        <input type="text" id="newsletterName" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletterEmail">E-mail</label>
+                        <input type="email" id="newsletterEmail" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletterInterests">Interesses</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="materiais">
+                                Materiais Didáticos
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="eventos">
+                                Eventos
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="artigos">
+                                Artigos
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="projetos">
+                                Projetos
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="privacy" required>
+                            Li e concordo com a <a href="privacidade.html">Política de Privacidade</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Inscrever-se
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="newsletter-benefits">
+            <div class="benefit-card">
+                <i class="fas fa-bell"></i>
+                <h4>Atualizações em Tempo Real</h4>
+                <p>Seja o primeiro a saber sobre nossas novidades</p>
+            </div>
+
+            <div class="benefit-card">
+                <i class="fas fa-gift"></i>
+                <h4>Conteúdo Exclusivo</h4>
+                <p>Acesso antecipado a materiais e eventos</p>
+            </div>
+
+            <div class="benefit-card">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Privacidade Garantida</h4>
+                <p>Seus dados estão seguros conosco</p>
+            </div>
+        </div>
+    </div>
+</section> 

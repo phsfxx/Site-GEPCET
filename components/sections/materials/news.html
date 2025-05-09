@@ -1,0 +1,154 @@
+<!-- News Section -->
+<section class="news-section" aria-label="Notícias">
+    <div class="container">
+        <h3><i class="fas fa-newspaper"></i> Notícias</h3>
+        
+        <div class="filter-bar">
+            <div class="search-box">
+                <input type="text" id="newsSearch" placeholder="Buscar notícias...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="filter-options">
+                <select id="categoryFilter">
+                    <option value="">Todas as categorias</option>
+                    <option value="eventos">Eventos</option>
+                    <option value="projetos">Projetos</option>
+                    <option value="publicacoes">Publicações</option>
+                    <option value="parcerias">Parcerias</option>
+                </select>
+                <select id="yearFilter">
+                    <option value="">Todos os anos</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="news-grid">
+            <article class="news-card">
+                <div class="news-image">
+                    <img src="assets/images/news/noticia1.jpg" alt="Imagem da notícia" loading="lazy">
+                    <span class="news-category">Eventos</span>
+                </div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <span class="news-date">
+                            <i class="fas fa-calendar"></i>
+                            15 de Março de 2024
+                        </span>
+                        <span class="news-author">
+                            <i class="fas fa-user"></i>
+                            Autor da Notícia
+                        </span>
+                    </div>
+                    <h4>Título da Notícia</h4>
+                    <p class="news-excerpt">
+                        Resumo da notícia com uma breve descrição do conteúdo e principais pontos...
+                    </p>
+                    <div class="news-tags">
+                        <span class="tag">Evento</span>
+                        <span class="tag">Educação</span>
+                        <span class="tag">Ciências</span>
+                    </div>
+                </div>
+                <div class="news-footer">
+                    <a href="noticias/noticia1.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-right"></i> Ler mais
+                    </a>
+                    <div class="news-share">
+                        <button class="btn btn-icon" onclick="shareNews('noticia1')">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="news-image">
+                    <img src="assets/images/news/noticia2.jpg" alt="Imagem da notícia" loading="lazy">
+                    <span class="news-category">Projetos</span>
+                </div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <span class="news-date">
+                            <i class="fas fa-calendar"></i>
+                            10 de Fevereiro de 2024
+                        </span>
+                        <span class="news-author">
+                            <i class="fas fa-user"></i>
+                            Autor da Notícia
+                        </span>
+                    </div>
+                    <h4>Título da Notícia</h4>
+                    <p class="news-excerpt">
+                        Resumo da notícia com uma breve descrição do conteúdo e principais pontos...
+                    </p>
+                    <div class="news-tags">
+                        <span class="tag">Projeto</span>
+                        <span class="tag">Pesquisa</span>
+                        <span class="tag">Inovação</span>
+                    </div>
+                </div>
+                <div class="news-footer">
+                    <a href="noticias/noticia2.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-right"></i> Ler mais
+                    </a>
+                    <div class="news-share">
+                        <button class="btn btn-icon" onclick="shareNews('noticia2')">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="news-image">
+                    <img src="assets/images/news/noticia3.jpg" alt="Imagem da notícia" loading="lazy">
+                    <span class="news-category">Publicações</span>
+                </div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <span class="news-date">
+                            <i class="fas fa-calendar"></i>
+                            5 de Janeiro de 2024
+                        </span>
+                        <span class="news-author">
+                            <i class="fas fa-user"></i>
+                            Autor da Notícia
+                        </span>
+                    </div>
+                    <h4>Título da Notícia</h4>
+                    <p class="news-excerpt">
+                        Resumo da notícia com uma breve descrição do conteúdo e principais pontos...
+                    </p>
+                    <div class="news-tags">
+                        <span class="tag">Publicação</span>
+                        <span class="tag">Artigo</span>
+                        <span class="tag">Pesquisa</span>
+                    </div>
+                </div>
+                <div class="news-footer">
+                    <a href="noticias/noticia3.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-right"></i> Ler mais
+                    </a>
+                    <div class="news-share">
+                        <button class="btn btn-icon" onclick="shareNews('noticia3')">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="pagination">
+            <button class="btn btn-secondary" disabled>
+                <i class="fas fa-chevron-left"></i> Anterior
+            </button>
+            <span class="page-info">Página 1 de 2</span>
+            <button class="btn btn-secondary">
+                Próxima <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</section> 

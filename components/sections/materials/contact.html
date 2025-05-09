@@ -1,0 +1,180 @@
+<!-- Contact Section -->
+<section class="contact-section" aria-label="Contato">
+    <div class="container">
+        <h3><i class="fas fa-envelope"></i> Contato</h3>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Endereço</h4>
+                    <p>
+                        Universidade do Estado de Minas Gerais<br>
+                        Campus Belo Horizonte<br>
+                        Rua [Endereço], [Número]<br>
+                        Bairro [Bairro]<br>
+                        Belo Horizonte - MG<br>
+                        CEP: [CEP]
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>Telefones</h4>
+                    <p>
+                        Geral: (XX) XXXX-XXXX<br>
+                        Secretaria: (XX) XXXX-XXXX<br>
+                        Coordenação: (XX) XXXX-XXXX
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>
+                        Geral: contato@gepcet.com.br<br>
+                        Secretaria: secretaria@gepcet.com.br<br>
+                        Coordenação: coordenacao@gepcet.com.br
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Horário de Atendimento</h4>
+                    <p>
+                        Segunda a Sexta: 08:00 às 18:00<br>
+                        Sábado: 08:00 às 12:00<br>
+                        Domingo: Fechado
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h4>Envie uma Mensagem</h4>
+                <form id="contactForm" action="enviar-mensagem.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nome Completo *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Assunto *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="geral">Informações Gerais</option>
+                            <option value="projetos">Projetos</option>
+                            <option value="eventos">Eventos</option>
+                            <option value="parcerias">Parcerias</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="privacy" required>
+                            Li e concordo com a <a href="privacidade.html">Política de Privacidade</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+
+            <div class="contact-map">
+                <h4>Localização</h4>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.788923516635!2d-43.9395!3d-19.9245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDU1JzI4LjIiUyA0M8KwNTYnMjIuMiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="contact-social">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="https://facebook.com/gepcet" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook"></i>
+                        Facebook
+                    </a>
+                    <a href="https://instagram.com/gepcet" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                        Instagram
+                    </a>
+                    <a href="https://twitter.com/gepcet" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-twitter"></i>
+                        Twitter
+                    </a>
+                    <a href="https://linkedin.com/company/gepcet" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://youtube.com/gepcet" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-youtube"></i>
+                        YouTube
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-faq">
+                <h4>Perguntas Frequentes</h4>
+                <div class="faq-list">
+                    <details>
+                        <summary>Como posso participar dos projetos do GEPCET?</summary>
+                        <p>
+                            Para participar dos projetos, você pode se inscrever através do formulário de contato
+                            ou diretamente na página de projetos. Nossa equipe entrará em contato para mais informações.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Quais são os requisitos para se tornar membro?</summary>
+                        <p>
+                            Os requisitos variam de acordo com o tipo de participação desejada. Entre em contato
+                            conosco para conhecer as opções disponíveis e os requisitos específicos.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Como posso acessar os materiais educacionais?</summary>
+                        <p>
+                            Os materiais educacionais estão disponíveis na seção "Materiais" do site. Alguns
+                            conteúdos podem requerer cadastro prévio.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-cta">
+            <p>Precisa de mais informações?</p>
+            <a href="faq.html" class="btn btn-primary">
+                <i class="fas fa-question-circle"></i>
+                Ver FAQ Completo
+            </a>
+        </div>
+    </div>
+</section> 

@@ -1,0 +1,163 @@
+<!-- Videos Section -->
+<section class="videos-section" aria-label="Vídeos">
+    <div class="container">
+        <h3><i class="fas fa-video"></i> Vídeos</h3>
+        
+        <div class="filter-bar">
+            <div class="search-box">
+                <input type="text" id="videoSearch" placeholder="Buscar vídeos...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="filter-options">
+                <select id="categoryFilter">
+                    <option value="">Todas as categorias</option>
+                    <option value="palestra">Palestra</option>
+                    <option value="tutorial">Tutorial</option>
+                    <option value="evento">Evento</option>
+                    <option value="depoimento">Depoimento</option>
+                </select>
+                <select id="yearFilter">
+                    <option value="">Todos os anos</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="videos-grid">
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="assets/images/videos/thumbnails/palestra1.jpg" alt="Thumbnail da palestra" loading="lazy">
+                    <div class="video-duration">45:30</div>
+                    <button class="play-button" aria-label="Reproduzir vídeo">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="video-content">
+                    <h4>Título da Palestra</h4>
+                    <p class="video-category">
+                        <i class="fas fa-tag"></i>
+                        Palestra
+                    </p>
+                    <p class="video-date">
+                        <i class="fas fa-calendar"></i>
+                        15 de Março de 2024
+                    </p>
+                    <p class="video-description">
+                        Descrição breve da palestra e seus principais tópicos...
+                    </p>
+                    <div class="video-tags">
+                        <span class="tag">Educação</span>
+                        <span class="tag">Ciências</span>
+                        <span class="tag">Pesquisa</span>
+                    </div>
+                </div>
+                <div class="video-footer">
+                    <a href="https://youtube.com/watch?v=xxxxx" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </a>
+                    <button class="btn btn-secondary" onclick="toggleTranscript('transcript1')">
+                        <i class="fas fa-closed-captioning"></i> Transcrição
+                    </button>
+                </div>
+                <div id="transcript1" class="video-transcript" hidden>
+                    <h5>Transcrição</h5>
+                    <p>Transcrição completa do vídeo...</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="assets/images/videos/thumbnails/tutorial1.jpg" alt="Thumbnail do tutorial" loading="lazy">
+                    <div class="video-duration">15:45</div>
+                    <button class="play-button" aria-label="Reproduzir vídeo">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="video-content">
+                    <h4>Título do Tutorial</h4>
+                    <p class="video-category">
+                        <i class="fas fa-tag"></i>
+                        Tutorial
+                    </p>
+                    <p class="video-date">
+                        <i class="fas fa-calendar"></i>
+                        10 de Fevereiro de 2024
+                    </p>
+                    <p class="video-description">
+                        Descrição breve do tutorial e seus principais tópicos...
+                    </p>
+                    <div class="video-tags">
+                        <span class="tag">Tecnologia</span>
+                        <span class="tag">Educação</span>
+                        <span class="tag">Tutorial</span>
+                    </div>
+                </div>
+                <div class="video-footer">
+                    <a href="https://youtube.com/watch?v=xxxxx" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </a>
+                    <button class="btn btn-secondary" onclick="toggleTranscript('transcript2')">
+                        <i class="fas fa-closed-captioning"></i> Transcrição
+                    </button>
+                </div>
+                <div id="transcript2" class="video-transcript" hidden>
+                    <h5>Transcrição</h5>
+                    <p>Transcrição completa do vídeo...</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="assets/images/videos/thumbnails/evento1.jpg" alt="Thumbnail do evento" loading="lazy">
+                    <div class="video-duration">1:30:00</div>
+                    <button class="play-button" aria-label="Reproduzir vídeo">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="video-content">
+                    <h4>Título do Evento</h4>
+                    <p class="video-category">
+                        <i class="fas fa-tag"></i>
+                        Evento
+                    </p>
+                    <p class="video-date">
+                        <i class="fas fa-calendar"></i>
+                        5 de Janeiro de 2024
+                    </p>
+                    <p class="video-description">
+                        Descrição breve do evento e seus principais tópicos...
+                    </p>
+                    <div class="video-tags">
+                        <span class="tag">Evento</span>
+                        <span class="tag">Educação</span>
+                        <span class="tag">Comunidade</span>
+                    </div>
+                </div>
+                <div class="video-footer">
+                    <a href="https://youtube.com/watch?v=xxxxx" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </a>
+                    <button class="btn btn-secondary" onclick="toggleTranscript('transcript3')">
+                        <i class="fas fa-closed-captioning"></i> Transcrição
+                    </button>
+                </div>
+                <div id="transcript3" class="video-transcript" hidden>
+                    <h5>Transcrição</h5>
+                    <p>Transcrição completa do vídeo...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="btn btn-secondary" disabled>
+                <i class="fas fa-chevron-left"></i> Anterior
+            </button>
+            <span class="page-info">Página 1 de 2</span>
+            <button class="btn btn-secondary">
+                Próxima <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</section> 

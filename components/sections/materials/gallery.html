@@ -1,0 +1,160 @@
+<!-- Gallery Section -->
+<section class="gallery-section" aria-label="Galeria de imagens">
+    <div class="container">
+        <h3><i class="fas fa-images"></i> Galeria de Imagens</h3>
+        
+        <div class="filter-bar">
+            <div class="search-box">
+                <input type="text" id="gallerySearch" placeholder="Buscar imagens...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="filter-options">
+                <select id="categoryFilter">
+                    <option value="">Todas as categorias</option>
+                    <option value="eventos">Eventos</option>
+                    <option value="projetos">Projetos</option>
+                    <option value="equipe">Equipe</option>
+                    <option value="instalacoes">Instalações</option>
+                </select>
+                <select id="yearFilter">
+                    <option value="">Todos os anos</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="assets/images/gallery/evento1.jpg" alt="Descrição da imagem" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Título da Imagem</h4>
+                    <p class="gallery-category">
+                        <i class="fas fa-tag"></i>
+                        Eventos
+                    </p>
+                    <p class="gallery-date">
+                        <i class="fas fa-calendar"></i>
+                        15 de Março de 2024
+                    </p>
+                    <p class="gallery-description">
+                        Descrição breve da imagem e seu contexto...
+                    </p>
+                    <div class="gallery-actions">
+                        <button class="btn btn-secondary" onclick="openLightbox('assets/images/gallery/evento1.jpg')">
+                            <i class="fas fa-expand"></i> Ampliar
+                        </button>
+                        <a href="assets/images/gallery/evento1.jpg" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery/projeto1.jpg" alt="Descrição da imagem" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Título da Imagem</h4>
+                    <p class="gallery-category">
+                        <i class="fas fa-tag"></i>
+                        Projetos
+                    </p>
+                    <p class="gallery-date">
+                        <i class="fas fa-calendar"></i>
+                        10 de Fevereiro de 2024
+                    </p>
+                    <p class="gallery-description">
+                        Descrição breve da imagem e seu contexto...
+                    </p>
+                    <div class="gallery-actions">
+                        <button class="btn btn-secondary" onclick="openLightbox('assets/images/gallery/projeto1.jpg')">
+                            <i class="fas fa-expand"></i> Ampliar
+                        </button>
+                        <a href="assets/images/gallery/projeto1.jpg" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery/equipe1.jpg" alt="Descrição da imagem" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Título da Imagem</h4>
+                    <p class="gallery-category">
+                        <i class="fas fa-tag"></i>
+                        Equipe
+                    </p>
+                    <p class="gallery-date">
+                        <i class="fas fa-calendar"></i>
+                        5 de Janeiro de 2024
+                    </p>
+                    <p class="gallery-description">
+                        Descrição breve da imagem e seu contexto...
+                    </p>
+                    <div class="gallery-actions">
+                        <button class="btn btn-secondary" onclick="openLightbox('assets/images/gallery/equipe1.jpg')">
+                            <i class="fas fa-expand"></i> Ampliar
+                        </button>
+                        <a href="assets/images/gallery/equipe1.jpg" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery/instalacao1.jpg" alt="Descrição da imagem" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Título da Imagem</h4>
+                    <p class="gallery-category">
+                        <i class="fas fa-tag"></i>
+                        Instalações
+                    </p>
+                    <p class="gallery-date">
+                        <i class="fas fa-calendar"></i>
+                        1 de Janeiro de 2024
+                    </p>
+                    <p class="gallery-description">
+                        Descrição breve da imagem e seu contexto...
+                    </p>
+                    <div class="gallery-actions">
+                        <button class="btn btn-secondary" onclick="openLightbox('assets/images/gallery/instalacao1.jpg')">
+                            <i class="fas fa-expand"></i> Ampliar
+                        </button>
+                        <a href="assets/images/gallery/instalacao1.jpg" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="btn btn-secondary" disabled>
+                <i class="fas fa-chevron-left"></i> Anterior
+            </button>
+            <span class="page-info">Página 1 de 3</span>
+            <button class="btn btn-secondary">
+                Próxima <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" hidden>
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="lightbox-image" src="" alt="Imagem ampliada">
+            <button class="lightbox-prev" onclick="prevImage()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-next" onclick="nextImage()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</section> 

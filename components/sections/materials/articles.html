@@ -1,0 +1,138 @@
+<!-- Articles Section -->
+<section class="articles-section" aria-label="Artigos acadêmicos">
+    <div class="container">
+        <h3><i class="fas fa-book"></i> Artigos Acadêmicos</h3>
+        
+        <div class="filter-bar">
+            <div class="search-box">
+                <input type="text" id="articleSearch" placeholder="Buscar artigos...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="filter-options">
+                <select id="yearFilter">
+                    <option value="">Todos os anos</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                </select>
+                <select id="areaFilter">
+                    <option value="">Todas as áreas</option>
+                    <option value="ciencias">Ciências</option>
+                    <option value="educacao">Educação</option>
+                    <option value="tecnologia">Tecnologia</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="articles-grid">
+            <article class="article-card">
+                <div class="article-header">
+                    <h4>Título do Artigo</h4>
+                    <span class="article-year">2024</span>
+                </div>
+                <div class="article-content">
+                    <p class="article-authors">
+                        <i class="fas fa-user-edit"></i>
+                        Autor 1, Autor 2, Autor 3
+                    </p>
+                    <p class="article-journal">
+                        <i class="fas fa-bookmark"></i>
+                        Revista de Educação em Ciências
+                    </p>
+                    <p class="article-abstract">
+                        Resumo do artigo com uma breve descrição do conteúdo e principais resultados...
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Educação</span>
+                        <span class="tag">Ciências</span>
+                        <span class="tag">Metodologia</span>
+                    </div>
+                </div>
+                <div class="article-footer">
+                    <a href="assets/docs/artigos/artigo1.pdf" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-file-pdf"></i> PDF
+                    </a>
+                    <a href="https://doi.org/10.xxxx/xxxxx" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> DOI
+                    </a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div class="article-header">
+                    <h4>Título do Artigo</h4>
+                    <span class="article-year">2023</span>
+                </div>
+                <div class="article-content">
+                    <p class="article-authors">
+                        <i class="fas fa-user-edit"></i>
+                        Autor 1, Autor 2
+                    </p>
+                    <p class="article-journal">
+                        <i class="fas fa-bookmark"></i>
+                        Revista de Tecnologia Educacional
+                    </p>
+                    <p class="article-abstract">
+                        Resumo do artigo com uma breve descrição do conteúdo e principais resultados...
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Tecnologia</span>
+                        <span class="tag">Educação</span>
+                        <span class="tag">Inovação</span>
+                    </div>
+                </div>
+                <div class="article-footer">
+                    <a href="assets/docs/artigos/artigo2.pdf" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-file-pdf"></i> PDF
+                    </a>
+                    <a href="https://doi.org/10.xxxx/xxxxx" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> DOI
+                    </a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div class="article-header">
+                    <h4>Título do Artigo</h4>
+                    <span class="article-year">2023</span>
+                </div>
+                <div class="article-content">
+                    <p class="article-authors">
+                        <i class="fas fa-user-edit"></i>
+                        Autor 1, Autor 2, Autor 3, Autor 4
+                    </p>
+                    <p class="article-journal">
+                        <i class="fas fa-bookmark"></i>
+                        Revista de Pesquisa em Educação
+                    </p>
+                    <p class="article-abstract">
+                        Resumo do artigo com uma breve descrição do conteúdo e principais resultados...
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Pesquisa</span>
+                        <span class="tag">Educação</span>
+                        <span class="tag">Formação</span>
+                    </div>
+                </div>
+                <div class="article-footer">
+                    <a href="assets/docs/artigos/artigo3.pdf" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-file-pdf"></i> PDF
+                    </a>
+                    <a href="https://doi.org/10.xxxx/xxxxx" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> DOI
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <div class="pagination">
+            <button class="btn btn-secondary" disabled>
+                <i class="fas fa-chevron-left"></i> Anterior
+            </button>
+            <span class="page-info">Página 1 de 3</span>
+            <button class="btn btn-secondary">
+                Próxima <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</section> 

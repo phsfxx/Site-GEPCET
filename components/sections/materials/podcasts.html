@@ -1,0 +1,187 @@
+<!-- Podcasts Section -->
+<section class="podcasts-section" aria-label="Podcasts">
+    <div class="container">
+        <h3><i class="fas fa-podcast"></i> Podcasts</h3>
+        
+        <div class="filter-bar">
+            <div class="search-box">
+                <input type="text" id="podcastSearch" placeholder="Buscar podcasts...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="filter-options">
+                <select id="categoryFilter">
+                    <option value="">Todas as categorias</option>
+                    <option value="entrevista">Entrevista</option>
+                    <option value="debate">Debate</option>
+                    <option value="noticias">Notícias</option>
+                    <option value="educativo">Educativo</option>
+                </select>
+                <select id="yearFilter">
+                    <option value="">Todos os anos</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="podcasts-grid">
+            <div class="podcast-card">
+                <div class="podcast-header">
+                    <img src="assets/images/podcasts/covers/episodio1.jpg" alt="Capa do episódio" loading="lazy">
+                    <div class="podcast-info">
+                        <h4>Título do Episódio</h4>
+                        <p class="podcast-category">
+                            <i class="fas fa-tag"></i>
+                            Entrevista
+                        </p>
+                        <p class="podcast-date">
+                            <i class="fas fa-calendar"></i>
+                            15 de Março de 2024
+                        </p>
+                        <p class="podcast-duration">
+                            <i class="fas fa-clock"></i>
+                            45:30
+                        </p>
+                    </div>
+                </div>
+                <div class="podcast-content">
+                    <p class="podcast-description">
+                        Descrição breve do episódio e seus principais tópicos...
+                    </p>
+                    <div class="podcast-tags">
+                        <span class="tag">Educação</span>
+                        <span class="tag">Ciências</span>
+                        <span class="tag">Pesquisa</span>
+                    </div>
+                </div>
+                <div class="podcast-footer">
+                    <audio controls>
+                        <source src="assets/audio/podcasts/episodio1.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <div class="podcast-actions">
+                        <a href="assets/audio/podcasts/episodio1.mp3" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                        <button class="btn btn-secondary" onclick="toggleTranscript('podcast-transcript1')">
+                            <i class="fas fa-closed-captioning"></i> Transcrição
+                        </button>
+                    </div>
+                </div>
+                <div id="podcast-transcript1" class="podcast-transcript" hidden>
+                    <h5>Transcrição</h5>
+                    <p>Transcrição completa do episódio...</p>
+                </div>
+            </div>
+
+            <div class="podcast-card">
+                <div class="podcast-header">
+                    <img src="assets/images/podcasts/covers/episodio2.jpg" alt="Capa do episódio" loading="lazy">
+                    <div class="podcast-info">
+                        <h4>Título do Episódio</h4>
+                        <p class="podcast-category">
+                            <i class="fas fa-tag"></i>
+                            Debate
+                        </p>
+                        <p class="podcast-date">
+                            <i class="fas fa-calendar"></i>
+                            10 de Fevereiro de 2024
+                        </p>
+                        <p class="podcast-duration">
+                            <i class="fas fa-clock"></i>
+                            1:15:00
+                        </p>
+                    </div>
+                </div>
+                <div class="podcast-content">
+                    <p class="podcast-description">
+                        Descrição breve do episódio e seus principais tópicos...
+                    </p>
+                    <div class="podcast-tags">
+                        <span class="tag">Tecnologia</span>
+                        <span class="tag">Educação</span>
+                        <span class="tag">Inovação</span>
+                    </div>
+                </div>
+                <div class="podcast-footer">
+                    <audio controls>
+                        <source src="assets/audio/podcasts/episodio2.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <div class="podcast-actions">
+                        <a href="assets/audio/podcasts/episodio2.mp3" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                        <button class="btn btn-secondary" onclick="toggleTranscript('podcast-transcript2')">
+                            <i class="fas fa-closed-captioning"></i> Transcrição
+                        </button>
+                    </div>
+                </div>
+                <div id="podcast-transcript2" class="podcast-transcript" hidden>
+                    <h5>Transcrição</h5>
+                    <p>Transcrição completa do episódio...</p>
+                </div>
+            </div>
+
+            <div class="podcast-card">
+                <div class="podcast-header">
+                    <img src="assets/images/podcasts/covers/episodio3.jpg" alt="Capa do episódio" loading="lazy">
+                    <div class="podcast-info">
+                        <h4>Título do Episódio</h4>
+                        <p class="podcast-category">
+                            <i class="fas fa-tag"></i>
+                            Educativo
+                        </p>
+                        <p class="podcast-date">
+                            <i class="fas fa-calendar"></i>
+                            5 de Janeiro de 2024
+                        </p>
+                        <p class="podcast-duration">
+                            <i class="fas fa-clock"></i>
+                            30:15
+                        </p>
+                    </div>
+                </div>
+                <div class="podcast-content">
+                    <p class="podcast-description">
+                        Descrição breve do episódio e seus principais tópicos...
+                    </p>
+                    <div class="podcast-tags">
+                        <span class="tag">Educação</span>
+                        <span class="tag">Aprendizado</span>
+                        <span class="tag">Conhecimento</span>
+                    </div>
+                </div>
+                <div class="podcast-footer">
+                    <audio controls>
+                        <source src="assets/audio/podcasts/episodio3.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <div class="podcast-actions">
+                        <a href="assets/audio/podcasts/episodio3.mp3" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                        <button class="btn btn-secondary" onclick="toggleTranscript('podcast-transcript3')">
+                            <i class="fas fa-closed-captioning"></i> Transcrição
+                        </button>
+                    </div>
+                </div>
+                <div id="podcast-transcript3" class="podcast-transcript" hidden>
+                    <h5>Transcrição</h5>
+                    <p>Transcrição completa do episódio...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="btn btn-secondary" disabled>
+                <i class="fas fa-chevron-left"></i> Anterior
+            </button>
+            <span class="page-info">Página 1 de 2</span>
+            <button class="btn btn-secondary">
+                Próxima <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</section> 
