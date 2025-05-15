@@ -8,14 +8,19 @@ function loadFooter() {
             return;
         }
 
+        // Determina o caminho base baseado na localização atual
+        const isInPages = window.location.pathname.includes('/pages/');
+        const basePath = isInPages ? '../' : './';
+        const logoPath = isInPages ? '../pages/assets/imagens/logo/logoGEPCET.jpg' : './pages/assets/imagens/logo/logoGEPCET.jpg';
+
         // HTML do footer
         const footerHTML = `
             <footer class="footer">
                 <div class="footer-content">
                     <!-- Coluna da Marca -->
                     <div class="footer-brand">
-                        <a href="./index.html" class="footer-logo">
-                            <img src="./assets/images/Logo GEPCET/logoGEPCET.jpg" alt="Logo GEPCET" width="60" height="60" loading="lazy">
+                        <a href="${basePath}index.html" class="footer-logo">
+                            <img src="${logoPath}" alt="Logo GEPCET" width="60" height="60" loading="lazy">
                             <div class="footer-logo-text">
                                 <h2>GEPCET</h2>
                                 <span>Grupo de Estudos e Pesquisa em Ciências, Educação e Tecnologia</span>
@@ -28,11 +33,10 @@ function loadFooter() {
                     <div class="footer-links">
                         <h3>Navegação</h3>
                         <ul>
-                            <li><a href="./index.html"><i class="fas fa-home"></i>Início</a></li>
-                            <li><a href="./pages/formacoes.html"><i class="fas fa-graduation-cap"></i>Formações e Materiais</a></li>
-                            <li><a href="./pages/projetos.html"><i class="fas fa-project-diagram"></i>Projetos Ativos</a></li>
-                            <li><a href="./pages/sobre.html"><i class="fas fa-info-circle"></i>Sobre o GEPCET</a></li>
-                            <li><a href="./pages/contato.html"><i class="fas fa-envelope"></i>Contato</a></li>
+                            <li><a href="${basePath}index.html">Quem Somos</a></li>
+                            <li><a href="${basePath}pages/projetosInstitucionais.html">Projetos Institucionais</a></li>
+                            <li><a href="${basePath}pages/membrosGEPCET.html">Membros do GEPCET</a></li>
+                            <li><a href="${basePath}pages/contato.html">Contato</a></li>
                         </ul>
                     </div>
 
@@ -145,11 +149,11 @@ function adjustFooterPosition() {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM carregado, iniciando carregamento do footer...');
     loadFooter();
-    
+
     // Ajusta o footer quando a janela for redimensionada
     let resizeTimeout;
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(adjustFooterPosition, 250);
     });
-}); 
+});

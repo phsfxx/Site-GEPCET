@@ -37,10 +37,10 @@ class ResponsiveManager {
         // Inicializa os event listeners
         window.addEventListener('resize', this.debounce(this.handleResize.bind(this), 250));
         window.addEventListener('load', this.handleResize.bind(this));
-        
+
         // Inicializa o menu responsivo
         this.initResponsiveMenu();
-        
+
         // Aplica ajustes iniciais
         this.applyResponsiveStyles();
     }
@@ -58,12 +58,12 @@ class ResponsiveManager {
     // Gerencia o redimensionamento da janela
     handleResize() {
         const newBreakpoint = this.getCurrentBreakpoint();
-        
+
         if (newBreakpoint !== this.currentBreakpoint) {
             this.currentBreakpoint = newBreakpoint;
             this.applyResponsiveStyles();
         }
-        
+
         this.updateFontSizes();
         this.updateLayout();
     }
@@ -73,7 +73,7 @@ class ResponsiveManager {
         const body = document.body;
         body.className = ''; // Limpa classes existentes
         body.classList.add(`breakpoint-${this.currentBreakpoint}`);
-        
+
         // Ajusta o container principal
         const containers = document.querySelectorAll('.container');
         containers.forEach(container => {
@@ -83,12 +83,17 @@ class ResponsiveManager {
 
     // Retorna a largura máxima do container baseado no breakpoint
     getContainerWidth() {
-        switch(this.currentBreakpoint) {
-            case 'tv': return '1800px';
-            case 'large': return '1400px';
-            case 'desktop': return '1200px';
-            case 'tablet': return '720px';
-            default: return '100%';
+        switch (this.currentBreakpoint) {
+            case 'tv':
+                return '1800px';
+            case 'large':
+                return '1400px';
+            case 'desktop':
+                return '1200px';
+            case 'tablet':
+                return '720px';
+            default:
+                return '100%';
         }
     }
 
@@ -121,12 +126,17 @@ class ResponsiveManager {
 
     // Retorna número de colunas para grid baseado no breakpoint
     getGridColumns() {
-        switch(this.currentBreakpoint) {
-            case 'tv': return 4;
-            case 'large': return 3;
-            case 'desktop': return 3;
-            case 'tablet': return 2;
-            default: return 1;
+        switch (this.currentBreakpoint) {
+            case 'tv':
+                return 4;
+            case 'large':
+                return 3;
+            case 'desktop':
+                return 3;
+            case 'tablet':
+                return 2;
+            default:
+                return 1;
         }
     }
 
@@ -147,12 +157,12 @@ class ResponsiveManager {
         const menuToggle = document.querySelector('.menu-toggle');
         const mainNav = document.querySelector('.main-nav');
         const body = document.body;
-        
+
         // Cria o overlay
         const overlay = document.createElement('div');
         overlay.className = 'menu-overlay';
         body.appendChild(overlay);
-        
+
         if (menuToggle && mainNav) {
             // Função para fechar o menu
             const closeMenu = () => {
@@ -226,4 +236,4 @@ class ResponsiveManager {
 // Inicializa o gerenciador de responsividade
 document.addEventListener('DOMContentLoaded', () => {
     window.responsiveManager = new ResponsiveManager();
-}); 
+});
