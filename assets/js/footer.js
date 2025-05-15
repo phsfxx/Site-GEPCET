@@ -23,7 +23,7 @@ function loadFooter() {
                             <img src="${logoPath}" alt="Logo GEPCET" width="60" height="60" loading="lazy">
                             <div class="footer-logo-text">
                                 <h2>GEPCET</h2>
-                                <span>Grupo de Estudos e Pesquisa em Ciências, Educação e Tecnologia</span>
+                                <span>Grupo de Estudos e Pesquisas em Currículo, Ensino e Tecnologias – GEPCET</span>
                             </div>
                         </a>
                         <p class="footer-mission">Integrando ciência, educação e tecnologia para transformar realidades</p>
