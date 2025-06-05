@@ -74,9 +74,6 @@ function loadFooter() {
                             <a href="https://www.youtube.com/@gepcet" class="social-icon-link" target="_blank" rel="noopener" aria-label="YouTube">
                                 <i class="fab fa-youtube"></i>
                             </a>
-                            <a href="https://www.linkedin.com/company/gepcet" class="social-icon-link" target="_blank" rel="noopener" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
